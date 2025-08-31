@@ -5,14 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivani Kumari | Cloud & DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Typewriter Effect -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
   <!-- Navbar -->
-  <nav id="navbar">
-    <h1>Shivani Kumari</h1>
-    <div>
+  <nav>
+    <h1 class="logo">Shivani Kumari</h1>
+    <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -25,70 +24,85 @@
   </nav>
 
   <!-- Hero -->
-  <section id="home">
-    <h2>Hi, I'm Shivani Kumari 👋</h2>
-    <div id="typewriter"></div>
-    <p>
+  <section id="home" class="hero">
+    <h2>Hi, I'm <span class="highlight">Shivani Kumari 👋</span></h2>
+    <div id="typewriter" class="typewriter"></div>
+    <p class="subtitle">
       Designing secure, scalable, and automated cloud infrastructure with AWS,
       Kubernetes, and DevOps best practices.
     </p>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      AWS-certified Cloud & DevOps Engineer with 2+ years of experience...
-      (your about text here).
+      AWS-certified Cloud & DevOps Engineer with 2+ years of experience building,
+      automating, and securing scalable infrastructure. Gold Medalist in B.Tech CSE
+      (Cloud Technology & Information Security).
     </p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section cards">
     <h2>Skills</h2>
-    <ul>
-      <li>☁️ AWS</li>
-      <li>📦 Kubernetes</li>
-      <li>🐳 Docker</li>
-      <li>🛠️ Terraform</li>
-      <li>🚀 ArgoCD</li>
-      <li>🐍 Python</li>
-      <li>🐧 Linux</li>
-    </ul>
+    <div class="grid">
+      <div class="card">☁️ AWS</div>
+      <div class="card">📦 Kubernetes</div>
+      <div class="card">🐳 Docker</div>
+      <div class="card">🛠️ Terraform</div>
+      <div class="card">🚀 ArgoCD</div>
+      <div class="card">🐍 Python</div>
+      <div class="card">🐧 Linux</div>
+      <div class="card">💻 GitHub</div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="section cards">
     <h2>Projects</h2>
-    <div>
-      <h3>Terraform AWS Infra Setup</h3>
-      <p>Automated AWS infra provisioning...</p>
-    </div>
-    <div>
-      <h3>Kubernetes on ROSA</h3>
-      <p>Deployed microservices with ArgoCD...</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Terraform AWS Infra Setup</h3>
+        <p>Automated AWS infrastructure provisioning (VPC, EC2, RDS, IAM) with Terraform.</p>
+      </div>
+      <div class="card">
+        <h3>Kubernetes on ROSA</h3>
+        <p>Deployed microservices on ROSA using ArgoCD GitOps workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Security with Prisma</h3>
+        <p>Integrated Prisma Cloud for container & IAM security compliance.</p>
+      </div>
+      <div class="card">
+        <h3>Three-Tier App on AWS EKS</h3>
+        <p>Built scalable 3-tier application architecture using EKS & CI/CD pipelines.</p>
+      </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="section">
     <h2>Experience</h2>
-    <p><b>Cloud Engineer – Reve Cloud (AspireNXT)</b> (2023–Present)</p>
-    <p>Optimized AWS infra with Kubernetes...</p>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
     <ul>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Oracle Cloud Infrastructure Foundations</li>
-      <li>Google IT Automation</li>
+      <li><b>Cloud Engineer – Reve Cloud</b> (2023–Present)</li>
+      <li><b>AWS Cloud Intern – F13 Technologies</b> (2022)</li>
     </ul>
   </section>
 
+  <!-- Certifications -->
+  <section id="certifications" class="section cards">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">AWS Solutions Architect – Associate</div>
+      <div class="card">Oracle Cloud Infrastructure Foundations</div>
+      <div class="card">Google IT Automation</div>
+      <div class="card">NPTEL - OOAD</div>
+    </div>
+  </section>
+
   <!-- Achievements -->
-  <section id="achievements">
+  <section id="achievements" class="section">
     <h2>Achievements</h2>
     <ul>
       <li>🏅 Gold Medalist in B.Tech CSE</li>
@@ -98,17 +112,14 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:shivani824101@gmail.com">shivani824101@gmail.com</a></p>
-    <p>Phone: <a href="tel:+916287626747">+91 62876 26747</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/shivanikumaridevops" target="_blank">linkedin.com/in/shivanikumaridevops</a></p>
     <p>GitHub: <a href="https://github.com/shi1va" target="_blank">github.com/shi1va</a></p>
   </section>
 
-  <footer>
-    © <span id="year"></span> Shivani Kumari. All rights reserved.
-  </footer>
+  <footer>© <span id="year"></span> Shivani Kumari. All rights reserved.</footer>
 
   <script src="script.js"></script>
 </body>
