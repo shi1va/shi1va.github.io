@@ -3,129 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivani Kumari | Cloud Engineer Portfolio</title>
+  <title>Shivani Kumari | Cloud & DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <nav>
-      <h1>Shivani Kumari</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <h1 class="logo">Shivani Kumari</h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <h2>Hi, I'm <span>Shivani Kumari</span> 👋</h2>
-    <p>Cloud Engineer | DevOps Enthusiast | AWS | Kubernetes | Terraform</p>
+    <h2>Hi, I'm <span class="highlight">Shivani Kumari 👋</span></h2>
+    <div id="typewriter" class="typewriter"></div>
+    <p class="subtitle">
+      Designing secure, scalable, and automated cloud infrastructure with AWS,
+      Kubernetes, and DevOps best practices.
+    </p>
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      AWS-certified Cloud & DevOps Engineer with 2+ years of experience. 
-      Gold Medalist in B.Tech CSE (Cloud Technology & InfoSec). 
-      Passionate about secure, scalable, automated infrastructure.
+      AWS-certified Cloud & DevOps Engineer with 2+ years of experience building,
+      automating, and securing scalable infrastructure. Gold Medalist in B.Tech CSE
+      (Cloud Technology & Information Security).
     </p>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section cards">
     <h2>Skills</h2>
     <div class="grid">
       <div class="card">☁️ AWS</div>
       <div class="card">📦 Kubernetes</div>
       <div class="card">🐳 Docker</div>
       <div class="card">🛠️ Terraform</div>
-      <div class="card">🎩 OpenShift</div>
       <div class="card">🚀 ArgoCD</div>
-      <div class="card">⚡ CI/CD</div>
-      <div class="card">🔒 Prisma Cloud</div>
-      <div class="card">🐧 Linux</div>
       <div class="card">🐍 Python</div>
+      <div class="card">🐧 Linux</div>
       <div class="card">💻 GitHub</div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="section cards">
     <h2>Projects</h2>
-    <div class="card">
-      <h3>Deployment of a Three-Tier Application on AWS EKS</h3>
-      <p>
-        Implemented a scalable 3-tier app architecture using AWS EKS. 
-        Automated CI/CD, monitoring, and optimized infra resources.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Terraform AWS Infra Setup</h3>
-      <p>
-        Automated AWS infra (VPC, EC2, RDS, IAM) with Terraform. 
-        Ensured cost optimization & scalability.
-      </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Terraform AWS Infra Setup</h3>
+        <p>Automated AWS infrastructure provisioning (VPC, EC2, RDS, IAM) with Terraform.</p>
+      </div>
+      <div class="card">
+        <h3>Kubernetes on ROSA</h3>
+        <p>Deployed microservices on ROSA using ArgoCD GitOps workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Security with Prisma</h3>
+        <p>Integrated Prisma Cloud for container & IAM security compliance.</p>
+      </div>
+      <div class="card">
+        <h3>Three-Tier App on AWS EKS</h3>
+        <p>Built scalable 3-tier application architecture using EKS & CI/CD pipelines.</p>
+      </div>
     </div>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="section">
     <h2>Experience</h2>
-    <div class="card">
-      <h3>Cloud Engineer – Reve Cloud (AspireNXT)</h3>
-      <p>May 2023 – Present</p>
-      <p>Optimized AWS infra with Kubernetes, ArgoCD & Prisma Cloud. Reduced costs by 25%, ensured 99.99% uptime.</p>
-    </div>
-    <div class="card">
-      <h3>AWS Cloud Intern – F13 Technologies</h3>
-      <p>Jul 2022 – Oct 2022</p>
-      <p>Hands-on with EC2, S3, RDS, Lambda. Built automation scripts with Python & Boto3.</p>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
     <ul>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Oracle Cloud Infrastructure 2023 Certified Foundations Associate</li>
-      <li>Google IT Automation Certificate</li>
-      <li>NPTEL - Object Oriented Analysis and Design</li>
+      <li><b>Cloud Engineer – Reve Cloud</b> (2023–Present)</li>
+      <li><b>AWS Cloud Intern – F13 Technologies</b> (2022)</li>
     </ul>
   </section>
 
+  <!-- Certifications -->
+  <section id="certifications" class="section cards">
+    <h2>Certifications</h2>
+    <div class="grid">
+      <div class="card">AWS Solutions Architect – Associate</div>
+      <div class="card">Oracle Cloud Infrastructure Foundations</div>
+      <div class="card">Google IT Automation</div>
+      <div class="card">NPTEL - OOAD</div>
+    </div>
+  </section>
+
   <!-- Achievements -->
-  <section id="achievements">
+  <section id="achievements" class="section">
     <h2>Achievements</h2>
     <ul>
-      <li>🏅 Gold Medalist – B.Tech CSE (Cloud Technology & Security)</li>
-      <li>🚀 Delivered 99.99% uptime at Reve Cloud</li>
-      <li>💰 Reduced AWS costs by 25%</li>
-      <li>🛡️ Led DR drills across AWS & ROSA clusters</li>
+      <li>🏅 Gold Medalist in B.Tech CSE</li>
+      <li>99.99% uptime infra at Reve Cloud</li>
+      <li>Reduced AWS costs by 25%</li>
     </ul>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:shivani824101@gmail.com">shivani824101@gmail.com</a></p>
-    <p>Phone: <a href="tel:+916287626747">+91 62876 26747</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/shivanikumaridevops" target="_blank">linkedin.com/in/shivanikumaridevops</a></p>
     <p>GitHub: <a href="https://github.com/shi1va" target="_blank">github.com/shi1va</a></p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Shivani Kumari. All Rights Reserved.</p>
-  </footer>
+  <footer>© <span id="year"></span> Shivani Kumari. All rights reserved.</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
