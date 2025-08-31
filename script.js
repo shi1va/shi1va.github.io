@@ -7,16 +7,16 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString("☁️ Cloud Engineer")
+  .typeString("☁️ Cloud and DevOps Engineer")
   .pauseFor(1500)
   .deleteAll()
-  .typeString("⚡ DevOps Enthusiast")
+  .typeString(" DevOps | CI/CD | Automation")
   .pauseFor(1500)
   .deleteAll()
-  .typeString("🚀 AWS | Kubernetes | Terraform")
+  .typeString(" AWS | Kubernetes | Terraform")
   .pauseFor(1500)
   .deleteAll()
-  .typeString("🔒 Cloud Security Advocate")
+  .typeString(" Cloud Security Advocate")
   .pauseFor(1500)
   .start();
 
